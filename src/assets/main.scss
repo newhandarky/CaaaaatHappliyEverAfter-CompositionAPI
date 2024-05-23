@@ -1,0 +1,507 @@
+// flatpickr 套件使用 CSS
+@import 'flatpickr/dist/flatpickr.css';
+
+@import './boostrapCustom.scss';
+
+/*------------------------------------*\
+    background-color
+\*------------------------------------*/
+
+/*------------------------------------*\
+    link style
+\*------------------------------------*/
+.adminLink {
+  color: $primary;
+  text-decoration: none;
+
+  &:hover {
+    color: $danger;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: $danger;
+    margin: 0 auto;
+    transition: width 0.8s;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+}
+
+/*------------------------------------*\
+    h1, h2, h3, h4, h5, h6  fs-1, fs-2, fs-3, fs-4, fs-5, fs-6 caption style
+\*------------------------------------*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+.fs-1,
+.fs-2,
+.fs-3,
+.fs-4,
+.fs-5,
+.fs-6,
+caption {
+  color: $text;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: $font-weight-bold;
+}
+
+h4,
+h5,
+h6 {
+  font-weight: $font-weight-semibold;
+}
+
+p {
+  font-weight: $font-weight-normal;
+}
+
+.fs-1,
+.fs-2,
+.fs-3,
+.fs-4,
+.fs-5,
+.fs-6 {
+  font-weight: $font-weight-normal;
+}
+
+/*------------------------------------*\
+    ul, ol, li style
+\*------------------------------------*/
+ul,
+ol,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/*------------------------------------*\
+    font style
+\*------------------------------------*/
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+/*------------------------------------*\
+    btn icon
+\*------------------------------------*/
+/* 自訂按鈕樣式 */
+.primaryStrokeToFill-btn-primary {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px $primary;
+  border-radius: 2rem;
+  padding: 0.3rem 1.2rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  button,
+  a {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    color: $primary !important;
+  }
+
+  &:hover {
+    background-color: $primary;
+
+    button,
+    a {
+      color: $white !important;
+    }
+  }
+}
+
+.primaryFill-btn-primary {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px $primary;
+  border-radius: 2rem;
+  padding: 0.3rem 1.2rem;
+  background-color: $primary;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  button,
+  a {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    color: $white !important;
+  }
+
+  &:hover {
+    border-color: #e46d23;
+    background-color: #e46d23;
+  }
+}
+
+.primaryFill-btn-primary02 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px $primary02;
+  border-radius: 2rem;
+  padding: 0.3rem 1.2rem;
+  background-color: $primary02;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  button,
+  a {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    color: $primary !important;
+  }
+
+  &:hover {
+    border-color: rgb(252, 222, 203);
+    background-color: rgb(252, 222, 203);
+  }
+}
+
+.primaryStroke-btn-primary {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px $primary;
+  border-radius: 2rem;
+  padding: 0.3rem 1.2rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  button,
+  a {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    color: $primary !important;
+  }
+
+  &:hover {
+    background-color: $primary02;
+  }
+}
+
+.primaryNoneToFill-btn-primary {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px $primary;
+  border-radius: 2rem;
+  padding: 0.3rem 1.2rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  button,
+  a {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    color: $primary !important;
+  }
+
+  &:hover {
+    background-color: $primary;
+
+    button,
+    a {
+      color: $white !important;
+    }
+  }
+}
+
+.primaryDisabled-btn-primary {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px $gray-200;
+  border-radius: 2rem;
+  padding: 0.3rem 1.2rem;
+  background-color: $gray-200;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  button,
+  a {
+    pointer-events: none;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    color: $gray-500 !important;
+  }
+}
+
+//自訂相框樣式
+.PhotoPresent {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    position: absolute;
+    max-height: 100%;
+  }
+
+  div {
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    transform: translateY(30px);
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; // 使用 cover 填充并保持比例
+    }
+  }
+}
+
+/* 隐藏原始的文件上传按钮 */
+.selectImgFile {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  input {
+    display: none;
+  }
+
+  label {
+    cursor: pointer;
+    margin: 1rem;
+    text-align: center;
+    width: 150px;
+    background-color: $primary02;
+    border: none;
+    border-radius: 2rem;
+    padding: 0.3rem 1.2rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    color: $primary;
+
+    &:hover {
+      background-color: #fde2d0;
+    }
+  }
+}
+
+//自訂貓咪內容文字樣板
+.catBarContainer {
+  position: relative;
+
+  .catEars {
+    display: flex;
+    justify-content: space-between;
+
+    .catEar {
+      padding: 0 1.5rem;
+      padding-bottom: 0;
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  .catBarBorder {
+    bottom: 0;
+    max-width: 650px;
+    border: solid 3px $primary;
+    background-color: $background;
+    border-radius: 1rem;
+  }
+}
+
+/*------------------------------------*\
+    input
+\*------------------------------------*/
+//房型選擇按鈕
+
+.catRoomInput {
+  cursor: pointer;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  background-color: $white;
+
+  .inputBar {
+    display: inline-flex;
+    flex-direction: column;
+    font-size: 20px;
+    margin: 1rem;
+    width: 100%;
+
+    p {
+      font-weight: 500;
+    }
+
+    .inputText {
+      width: 150px;
+      height: 30px;
+      border: none;
+      color: $text;
+      caret-color: transparent;
+
+      &::placeholder {
+        color: $gray-400;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  .icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 1rem;
+    right: 0;
+  }
+}
+
+.selectType {
+  cursor: pointer;
+  height: 30px;
+  border: none;
+  color: $text;
+  z-index: 10;
+  margin-top: -1rem;
+  display: none;
+  transition: transform 0.1s ease-in-out, opacity 0.1s ease-in-out,
+    display 0.1s ease-in-out;
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
+
+  &.show {
+    pointer-events: auto;
+    transform: translateY(0px);
+    display: block;
+    opacity: 1;
+  }
+
+  .optionType {
+    border: none;
+    background-color: $white;
+    padding: 0.5rem 0;
+
+    &.optionLast {
+      border-radius: 0 0 10px 10px;
+    }
+
+    &:hover {
+      background-color: $primary02;
+      color: $primary;
+    }
+  }
+}
+
+/*------------------------------------*\
+    content size
+\*------------------------------------*/
+.bookingContent {
+  min-height: 500px;
+}
+
+/*------------------------------------*\
+    admin table responsive
+\*------------------------------------*/
+.cellNoWrap {
+  white-space: nowrap;
+}
+
+
+// RWD
+@mixin media-min-1200 {
+  @media(min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin media-min-992 {
+  @media(min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin media-min-768 {
+  @media(min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin media-min-576 {
+  @media(min-width: 576px) {
+    @content;
+  }
+}
+
+@mixin media-min-375 {
+  @media(min-width: 375px) {
+    @content;
+  }
+}
+
+// 水平方向的漸層 
+@mixin gradient-x($start-color: $primary, $end-color: $secondary) {
+  background-image: linear-gradient(to right, $start-color, $end-color);
+}
+
+// 垂直方向的漸層
+@mixin gradient-y($start-color: $primary, $end-color: $secondary) {
+  background-image: linear-gradient(to bottom, $start-color, $end-color);
+}
+
+// 背景圖
+@mixin bg-img-cover {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+//文字間距
+@mixin set-letter-spacing($font-size) {
+  font-size: $font-size;
+  letter-spacing: $font-size;
+}
+
+// 旋轉動畫
+@mixin rotate-360 {
+  animation-name: rotate-360;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
